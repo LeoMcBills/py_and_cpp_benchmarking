@@ -53,3 +53,25 @@ print(timeit.timeit("exp()", globals=globals(), number=1000))
 ```bash
 python -m cProfile test_script.py
 ```
+
+## For C++
+- The `chrono` library in C++ provides high-precision time points and durations, which is useful for benchmarking code.
+
+* Example code:
+```c++
+#include <iostream>
+#include <chrono>
+
+void example_function() {
+        // code statement
+}
+
+int main() {
+        auto start = std::chrono::high_resolution_clock::now();
+        example_function();
+        auto end = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<double>duration = end - start;
+        std::cout << "Execution Time: " << duration.count() << " seconds\n";
+        return 0;
+}
+```
