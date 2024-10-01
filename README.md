@@ -33,3 +33,17 @@ To effectively measure performance across different programming languages, consi
 Benchmarking Libraries: Libraries like hyperfine or Google Benchmark can automate timing and provide statistical analysis of run times.
 Profilers: Tools such as gprof or valgrind help analyze where time is spent within your programs.
 Custom Scripts: Writing scripts that utilize /usr/bin/time for measuring execution time and memory usage can provide detailed insights into performance characteristics 4
+
+
+## Tools for test performance
+## For Python3
+1. `timeit`
+```python3
+import timeit
+
+def exp():
+    # Code
+    pass
+
+print(timeit.timeit("exp()", globals=globals(), number=1000))
+```
