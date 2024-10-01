@@ -75,3 +75,15 @@ int main() {
         return 0;
 }
 ```
+2. **Google Benchmark**:
+* This is a powerful framework for micro-benchmarking in C++. It gives more detailed statistics and is suitable for more advanced use cases.
+* Setup:
+```bash
+git clone https://github.com/google/benchmark.git
+cd benchmark
+cmake -G "Unix Makefiles"
+make
+sudo make install
+```
+
+
