@@ -85,5 +85,13 @@ cmake -G "Unix Makefiles"
 make
 sudo make install
 ```
+* You can then write a benchmarking function in C++ and use this library to compare different parts of your code.
 
+3. **Profilers**
+* **gprof**: The GNU profiler for C++ which helps you analyze where the most time is being spent in your code.
 
+```bash
+g++ -pg your_program.cpp -o your_program
+./your_program
+gprof ./your_program gmon.out > analysis.txt
+```
