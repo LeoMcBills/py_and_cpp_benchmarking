@@ -4,7 +4,7 @@ using namespace std;
 int fibonacci_recursive(int); // Prototype
 
 int main() {
-    int n = 40;
+    int n = 12;
     cout << "Fibonacci(" << n << ") = " << fibonacci_recursive(n) << endl;
     return 0;
 }
