@@ -12,4 +12,4 @@ def sieve_of_eratosthenes(limit):
         p += 1
     return [p for p in range(2, limit) if primes[p]]
 
-print(sieve_of_eratosthenes(12))
+print(sieve_of_eratosthenes(300))
