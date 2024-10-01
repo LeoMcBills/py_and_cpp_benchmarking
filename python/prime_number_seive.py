@@ -1,3 +1,5 @@
+import timeit
+
 # Description: Generate prime numbers up to a specified limit using the sieve algorithm.
 # Why: This tests the efficiency of memory allocation and iteration loops.
 
