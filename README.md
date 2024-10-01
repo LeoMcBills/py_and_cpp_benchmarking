@@ -38,7 +38,7 @@ Custom Scripts: Writing scripts that utilize /usr/bin/time for measuring executi
 ## Tools for test performance
 ## For Python3
 1. `timeit`
-```python3
+```python
 import timeit
 
 def exp():
