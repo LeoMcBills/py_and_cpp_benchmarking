@@ -37,7 +37,7 @@ Custom Scripts: Writing scripts that utilize /usr/bin/time for measuring executi
 
 ## Tools for test performance
 ## For Python3
-1. `timeit`
+1. **`timeit`**
 ```python
 import timeit
 
@@ -46,4 +46,10 @@ def exp():
     pass
 
 print(timeit.timeit("exp()", globals=globals(), number=1000))
+```
+
+2. **Profilers:**
+- `cProfile`: It is a built-in profiler for Python that provides a detailed report of time taken by various parts of the program.
+```bash
+python -m cProfile test_script.py
 ```
